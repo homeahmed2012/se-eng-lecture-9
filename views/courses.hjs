@@ -34,12 +34,18 @@
             <th scope="col">id</th>
             <th scope="col">course</th>
             <th scope="col">code</th>
+            <th scope="col">Action</th>
           </tr>
           {{#courses}}
             <tr>
               <td>{{id}}</td>
               <td>{{course}}</td>
               <td>{{code}}</td>
+              <td>
+                <a href="/api/v1/courses/{{id}}/drop">
+                  <button>drop</button>
+                </a>
+              </td>
             </tr>
           {{/courses}}
         </thead>

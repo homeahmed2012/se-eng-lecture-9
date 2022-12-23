@@ -31,11 +31,12 @@
             <th scope="col">Last Name</th>
             <th scope="col">Major</th>
             <th scope="col">Grade</th>
+            
           </tr>
           {{#enrollment}}
             <tr>
               <td>{{code}}</td>
-              <td>{{name}}</td>
+              <td>{{course}}</td>
               <td>{{firstName}}</td>
               <td>{{lastName}}</td>
               <td>{{major}}</td>
